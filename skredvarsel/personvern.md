@@ -1,6 +1,6 @@
 # Personvern i Skredfare
 
-Sist oppdatert: 10. oktober 2026
+Sist oppdatert: 25. oktober 2026
 
 Skredfare er en Garmin-app som henter snøskredvarselet fra NVE for området du er i.
 
@@ -10,13 +10,13 @@ For å finne riktig varslingsregion sender appen posisjonen din til NVEs åpne A
 
 Forespørselen går fra klokka via Garmin Connect-appen på telefonen. NVE ser også IP-adressen den kommer fra.
 
-Har du lagt inn egne steder i appens innstillinger, sendes stedsnavnene til Kartverkets åpne stedsnavn-API (ws.geonorge.no) for å finne stedet. Deretter hentes varselet for stedet fra NVE på samme måte.
+Har du valgt varslingsregioner i appens meny, hentes varselet for dem fra NVE med regionnummeret. Da sendes ikke posisjonen.
 
 Når du åpner detaljsiden, henter appen resten av varselet fra NVE. Da sendes bare nummeret på varslingsregionen, ikke posisjonen.
 
 ## Hva som lagres
 
-Siste posisjon, stedene du har lagt inn og siste varsel lagres bare på klokka og i appens innstillinger hos Garmin. Det slettes når du avinstallerer appen.
+Siste posisjon, regionene du har valgt og siste varsel lagres bare på klokka. Det slettes når du avinstallerer appen.
 
 ## Hva utvikleren får vite
 
@@ -24,7 +24,7 @@ Ingenting. Det finnes ingen server bak appen, og ingen analyse, sporing eller re
 
 ## Andre
 
-NVE mottar forespørselen. Kartverket mottar stedsnavnene du har lagt inn. Garmin formidler den via telefonen og håndterer kjøpet i Connect IQ Store. Alle tre har egne personvernerklæringer.
+NVE mottar forespørselen. Garmin formidler den via telefonen og håndterer kjøpet i Connect IQ Store. Begge har egne personvernerklæringer.
 
 ## Spørsmål
 
@@ -38,7 +38,7 @@ Appen viser NVEs offisielle skredvarsel og er veiledende. Sjekk alltid varsom.no
 
 # Privacy in Skredfare
 
-Last updated: 10 October 2026
+Last updated: 25 October 2026
 
 Skredfare is a Garmin app that fetches the avalanche forecast from NVE (the Norwegian Water Resources and Energy Directorate) for the area you are in.
 
@@ -48,13 +48,13 @@ To find the right forecast region, the app sends your location to NVE's open API
 
 The request goes from the watch via the Garmin Connect app on your phone. NVE also sees the IP address it comes from.
 
-If you add your own places in the app settings, the place names are sent to Kartverket's open place name API (ws.geonorge.no) to find the place. The forecast for the place is then fetched from NVE in the same way.
+If you choose forecast regions in the app menu, their forecasts are fetched from NVE by region number. Your location is not sent then.
 
 When you open the detail page, the app fetches the rest of the forecast from NVE. Only the number of the forecast region is sent then, not your location.
 
 ## What is stored
 
-Your last location, the places you have added and the last forecast are stored only on the watch and in the app settings at Garmin. They are deleted when you uninstall the app.
+Your last location, the regions you have chosen and the last forecast are stored only on the watch. They are deleted when you uninstall the app.
 
 ## What the developer learns
 
@@ -62,7 +62,7 @@ Nothing. There is no server behind the app, and no analytics, tracking or ads. T
 
 ## Others
 
-NVE receives the request. Kartverket receives the place names you add. Garmin relays it via your phone and handles the purchase in the Connect IQ Store. All three have their own privacy policies.
+NVE receives the request. Garmin relays it via your phone and handles the purchase in the Connect IQ Store. Both have their own privacy policies.
 
 ## Questions
 
